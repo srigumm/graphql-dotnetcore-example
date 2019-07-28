@@ -1,0 +1,10 @@
+type Query {
+  cards: [CreditCard!]!
+  card(Id: ID!): CreditCard
+}
+
+type CreditCard {
+  id: ID!
+  name: String!
+  issuedby: String
+}
